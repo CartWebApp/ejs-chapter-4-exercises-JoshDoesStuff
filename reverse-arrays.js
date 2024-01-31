@@ -1,5 +1,9 @@
 function reverseArray(arr) {
-  // Add code.
+  let array = arr
+  let pop1 = array.pop();
+  let pop2 = array.pop();
+  array.unshift(pop1,pop2)
+  return array;
 }
 
 function reverseArrayInPlace(arr) {
