@@ -7,7 +7,19 @@ function reverseArray(arr) {
 }
 
 function reverseArrayInPlace(arr) {
-  // Add code.
+  let num1;
+  let num2;
+
+  let arrayLength = arr.length;
+  let idk = arrayLength / 2;
+
+  for (let count = 1; count <= Math.floor(idk); count++) {
+    num1 = arr[count - 1];
+    num2 = arr[arrayLength - count];
+    arr[count - 1] = num2;
+    arr[arrayLength - count] = num1;
+  }
+  return arr;
 }
 
 
