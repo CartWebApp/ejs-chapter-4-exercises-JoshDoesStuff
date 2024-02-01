@@ -6,8 +6,8 @@ function range(start, end, step = 1) {
     while (count < end) {
       rangeArr.push(`${count + step}`);
       count++
-      
-    } 
+
+    }
   } else if (end < start) {
     rangeArr.push(start)
     for (i = start; i > end; i = i + step) {
@@ -18,7 +18,15 @@ function range(start, end, step = 1) {
 }
 
 function sum(numbers) {
-  // Add code.
+  let length = numbers.length
+  // let count = Number(0);
+  // console.log(numbers[count])
+  let sumOfArray = 0
+  for (i = 0; i <= length - 1; i++) {
+    // console.log(numbers[i])
+    sumOfArray += Number(numbers[i]);
+  }
+  return sumOfArray
 }
 
 
