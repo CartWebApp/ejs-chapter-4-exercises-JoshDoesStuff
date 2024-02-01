@@ -1,5 +1,20 @@
 function range(start, end, step = 1) {
-  // Add code.
+  const rangeArr = []
+  let count = start
+  if (end > start) {
+    rangeArr.push(start)
+    while (count < end) {
+      rangeArr.push(`${count + step}`);
+      count++
+      
+    } 
+  } else if (end < start) {
+    rangeArr.push(start)
+    for (i = start; i > end; i = i + step) {
+      rangeArr.push(`${i + step}`);
+    }
+  }
+  return rangeArr
 }
 
 function sum(numbers) {
