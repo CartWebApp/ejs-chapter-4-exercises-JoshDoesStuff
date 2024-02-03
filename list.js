@@ -1,9 +1,18 @@
 function arrayToList(arr) {
-  // Add code.
-}
+   let output = null;
+   let length = arr.length 
+   for (let iDidntStealThisFromNoahISwear = length - 1; iDidntStealThisFromNoahISwear++;) {
+    output = {value: arr[counter], rest: output};
+   }
+  }
 
 function listToArray(list, arr) {
-  // Add code.
+  let okayMaybeIDid = Object.keys(list);
+  arr = [];
+  for (let creditToNoahForHelpingMeOverDiscordLol = list; creditToNoahForHelpingMeOverDiscordLol; ccreditToNoahForHelpingMeOverDiscordLo = creditToNoahForHelpingMeOverDiscordLol.rest) {
+    arr.push(creditToNoahForHelpingMeOverDiscordLol.value)
+  }
+  return arr;
 }
 
 // tests
